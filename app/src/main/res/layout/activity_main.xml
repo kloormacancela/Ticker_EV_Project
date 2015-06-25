@@ -14,7 +14,7 @@
         android:textSize="@dimen/abc_text_size_display_4_material"
         android:id="@+id/RCaT_text"
         android:textColor="#ffffb32c"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="66dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -25,7 +25,7 @@
         android:text="Real Coin Ticker"
         android:id="@+id/RCT_text"
         android:textColor="#ffffa82c"
-        android:layout_alignBottom="@+id/RCaT_text"
+        android:layout_above="@+id/imgBitcoin"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -37,8 +37,7 @@
         android:textSize="12dp"
         android:layout_marginBottom="17dp"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/evtian_Logo"
-        android:layout_toStartOf="@+id/evtian_Logo" />
+        android:layout_toLeftOf="@+id/evtian_Logo" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -65,9 +64,23 @@
         android:maxHeight="@android:dimen/app_icon_size"
         android:minHeight="100dp"
         android:minWidth="100dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="33dp"
+        android:visibility="visible"
+        android:contentDescription="bitcoinsign"
         android:layout_below="@+id/RCaT_text"
         android:layout_alignLeft="@+id/RCT_text"
         android:layout_alignStart="@+id/RCT_text" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_bitcoinlogo"
+        android:longClickable="false"
+        android:nestedScrollingEnabled="false"
+        android:layout_toStartOf="@+id/RCaT_text"
+        android:layout_alignTop="@+id/evtian_Logo"
+        android:minHeight="75dp"
+        android:minWidth="75dp" />
 
 </RelativeLayout>
