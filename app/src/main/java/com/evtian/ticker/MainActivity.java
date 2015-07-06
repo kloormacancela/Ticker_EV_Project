@@ -4,15 +4,20 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity {
 
+    Button btnShowDevi, btnPair;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      //  setContentView(R.layout.activity_main);
-        setContentView(R.layout.wifi_connection);
+        setContentView(R.layout.activity_main);
+      //  setContentView(R.layout.wifi_connection);
+        btnPair = (Button)findViewById(R.id.btnPair);
+        btnShowDevi = (Button)findViewById(R.id.btnShowDevice);
     }
 
     @Override
@@ -21,6 +26,15 @@ public class MainActivity extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
+
+    public void buttonOnClick(View v) {
+// do something when the button is clicked
+      // btnShowDevi.setVisibility(v.INVISIBLE);
+       // btnPair.setVisibility(v.INVISIBLE);
+
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

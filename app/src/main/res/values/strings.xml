@@ -4,4 +4,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="RCat">RCT</string>
+    <string name="btnPair">Pair Device</string>
+    <string name="btnShowDevice">Show Device</string>
 </resources>
