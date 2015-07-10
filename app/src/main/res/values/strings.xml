@@ -6,4 +6,5 @@
     <string name="RCat">RCT</string>
     <string name="btnPair">Pair Device</string>
     <string name="btnShowDevice">Show Device</string>
+    <string name="Wifi_settings">WiFi</string>
 </resources>

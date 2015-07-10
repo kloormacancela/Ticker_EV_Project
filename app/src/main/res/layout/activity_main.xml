@@ -14,7 +14,6 @@
         android:textSize="@dimen/abc_text_size_display_4_material"
         android:id="@+id/RCaT_text"
         android:textColor="#ffffb32c"
-        android:layout_marginTop="66dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -25,8 +24,9 @@
         android:text="Real Coin Ticker"
         android:id="@+id/RCT_text"
         android:textColor="#ffffa82c"
-        android:layout_above="@+id/imgBitcoin"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/circularProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,21 +55,30 @@
         android:paddingTop="0dp"
         android:paddingRight="-0dp"
         android:paddingLeft="0dp" />
-
+    <ProgressBar
+        android:id="@+id/circularProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:indeterminate="false"
+        android:max="60"
+        android:progressDrawable="@drawable/circle_progress_bar_foreground"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imgBitcoin"
         android:src="@mipmap/ic_bitcoin"
         android:maxHeight="@android:dimen/app_icon_size"
-        android:minHeight="100dp"
-        android:minWidth="100dp"
-        android:layout_marginTop="33dp"
+        android:minHeight="80dp"
+        android:minWidth="80dp"
         android:visibility="visible"
         android:contentDescription="bitcoinsign"
-        android:layout_below="@+id/RCaT_text"
-        android:layout_alignLeft="@+id/RCT_text"
-        android:layout_alignStart="@+id/RCT_text" />
+        android:clickable="false"
+        android:longClickable="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
